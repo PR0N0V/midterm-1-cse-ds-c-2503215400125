@@ -1,0 +1,95 @@
+body {
+  margin: 20px;
+  background-color: #eeeeee;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+.topbar,
+footer,
+.layout {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.brand {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.brand-mark {
+  background-color: green;
+  color: white;
+  padding: 5px;
+}
+
+.topbar-note,
+.eyebrow,
+.list-label,
+footer {
+  font-size: 12px;
+}
+
+.course-form,
+.course-section {
+  background-color: white;
+  border: 1px solid gray;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.form-heading,
+.list-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.course-form input {
+  display: block;
+  width: 95%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.form-row {
+  display: block;
+}
+
+button {
+  margin: 8px 5px 0 0;
+  padding: 6px 10px;
+  background-color: lightgray;
+  border: 1px solid gray;
+}
+
+.primary-button {
+  background-color: green;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-message {
+  color: red;
+}
+
+.course-item {
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+}
+
+.course-code {
+  margin-left: 5px;
+}
+
+.course-department {
+  margin-top: 5px;
+}

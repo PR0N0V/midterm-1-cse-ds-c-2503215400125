@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f6f1" />
+    <title>Course Manager</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Course Manager home">
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span>Course Manager</span>
+      </a>
+      <span class="topbar-note">ACADEMIC CATALOG</span>
+    </header>
+
+    <main class="layout">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">COURSE DIRECTORY</p>
+        <h1 id="page-title">Your courses,<br /><span>in one place.</span></h1>
+        <p class="intro-copy">
+          Keep the department catalog clear, current, and easy to browse.
+        </p>
+        <div class="catalog-count">
+          <span class="count-dot"></span
+          ><span id="course-count">Loading courses...</span>
+        </div>
+      </section>
+
+      <section class="workspace" aria-label="Course management">
+        <form class="course-form" id="course-form">
+          <div class="form-heading">
+            <div>
+              <p class="eyebrow" id="form-eyebrow">NEW ENTRY</p>
+              <h2 id="form-title">Add a course</h2>
+            </div>
+            <button class="text-button hidden" id="cancel-edit" type="button">
+              Cancel edit
+            </button>
+          </div>
+          <input id="course-id" type="hidden" />
+          <label>
+            Course name
+            <input
+              id="course-name"
+              name="courseName"
+              type="text"
+              placeholder="e.g. Data Structures"
+              required
+            />
+          </label>
+          <div class="form-row">
+            <label>
+              Course code
+              <input
+                id="course-code"
+                name="courseCode"
+                type="text"
+                placeholder="e.g. CS201"
+                required
+              />
+            </label>
+            <label>
+              Department
+              <input
+                id="department"
+                name="department"
+                type="text"
+                placeholder="e.g. Computer Science"
+                required
+              />
+            </label>
+          </div>
+          <button class="primary-button" id="submit-button" type="submit">
+            <span aria-hidden="true">+</span> Add course
+          </button>
+          <p
+            class="form-message"
+            id="form-message"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+
+        <section class="course-section" aria-labelledby="list-title">
+          <div class="list-heading">
+            <div>
+              <p class="eyebrow">ALL DEPARTMENTS</p>
+              <h2 id="list-title">Course list</h2>
+            </div>
+            <span class="list-label">CATALOG</span>
+          </div>
+          <div class="course-list" id="course-list" aria-live="polite">
+            <p class="empty-state">Loading course list...</p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>COURSE MANAGER <span>·</span> LOCAL CATALOG</footer>
+  </body>
+</html>
